@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E52197B2A3EEE6300EBDF96 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E52197A2A3EEE6300EBDF96 /* Constant.swift */; };
 		4E7E970F2A3E052900F1B57F /* TaskBuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E970E2A3E052900F1B57F /* TaskBuddyApp.swift */; };
 		4E7E97112A3E052900F1B57F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7E97102A3E052900F1B57F /* ContentView.swift */; };
 		4E7E97132A3E052B00F1B57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7E97122A3E052B00F1B57F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E52197A2A3EEE6300EBDF96 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		4E7E970B2A3E052900F1B57F /* TaskBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7E970E2A3E052900F1B57F /* TaskBuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskBuddyApp.swift; sourceTree = "<group>"; };
 		4E7E97102A3E052900F1B57F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 		4E7E97212A3E05B900F1B57F /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-rise.mp3"; sourceTree = "<group>"; };
 		4E7E97222A3E05B900F1B57F /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		4E7E97232A3E05B900F1B57F /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
+		4E7E972D2A3E068100F1B57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +64,15 @@
 		4E7E970D2A3E052900F1B57F /* TaskBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				4E7E972D2A3E068100F1B57F /* Info.plist */,
+				4E7E970E2A3E052900F1B57F /* TaskBuddyApp.swift */,
 				4E7E972A2A3E05F900F1B57F /* Style */,
 				4E7E97292A3E05E800F1B57F /* Extension */,
 				4E7E97282A3E05E100F1B57F /* Utility */,
 				4E7E97272A3E05D200F1B57F /* Sound */,
-				4E7E970E2A3E052900F1B57F /* TaskBuddyApp.swift */,
-				4E7E97102A3E052900F1B57F /* ContentView.swift */,
+				4E7E972B2A3E061300F1B57F /* View */,
+				4E7E972C2A3E064900F1B57F /* Model */,
 				4E7E97122A3E052B00F1B57F /* Assets.xcassets */,
-				4E7E97172A3E052B00F1B57F /* Persistence.swift */,
-				4E7E97192A3E052B00F1B57F /* TaskBuddy.xcdatamodeld */,
 				4E7E97142A3E052B00F1B57F /* Preview Content */,
 			);
 			path = TaskBuddy;
@@ -96,6 +99,7 @@
 		4E7E97282A3E05E100F1B57F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				4E52197A2A3EEE6300EBDF96 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -112,6 +116,23 @@
 			children = (
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		4E7E972B2A3E061300F1B57F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E97102A3E052900F1B57F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E7E972C2A3E064900F1B57F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E7E97172A3E052B00F1B57F /* Persistence.swift */,
+				4E7E97192A3E052B00F1B57F /* TaskBuddy.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +210,7 @@
 			files = (
 				4E7E97182A3E052B00F1B57F /* Persistence.swift in Sources */,
 				4E7E971B2A3E052B00F1B57F /* TaskBuddy.xcdatamodeld in Sources */,
+				4E52197B2A3EEE6300EBDF96 /* Constant.swift in Sources */,
 				4E7E97112A3E052900F1B57F /* ContentView.swift in Sources */,
 				4E7E970F2A3E052900F1B57F /* TaskBuddyApp.swift in Sources */,
 			);
@@ -322,9 +344,9 @@
 				DEVELOPMENT_TEAM = LXK8VH3962;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -351,9 +373,9 @@
 				DEVELOPMENT_TEAM = LXK8VH3962;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaskBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
